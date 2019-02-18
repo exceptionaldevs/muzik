@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.exceptionaldevs.muzyka.ui.widget.ElasticDragDismissFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/draggable_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dragDismissDistance="@dimen/drag_dismiss_distance"
+        app:dragDismissScale="1"
+        tools:context=".player.FortuneWheelActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+        <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/close_btn"
+                android:src="@drawable/ic_close_blue_grey_800_24dp"
+                android:tint="@color/secondarylight_icon"
+                android:layout_gravity="right|top"
+                android:scaleType="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+                android:id="@+id/fortune_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                tools:text="Major Lazer, Nyla Fuse, ODG"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal"
+                android:paddingTop="@dimen/spacing_normal"/>
+
+        <TextView
+                android:id="@+id/fortune_track"
+                android:layout_below="@+id/fortune_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="italic"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                tools:text="Light it Up (Remix)"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal"
+                android:paddingBottom="@dimen/spacing_normal"/>
+
+        <com.exceptionaldevs.muzyka.ui.widget.fortunewheel.FortuneWheel
+                android:id="@+id/fortunewheel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+        <TextView
+                android:id="@+id/again"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="@string/fortunewheel_again_btn"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+
+</com.exceptionaldevs.muzyka.ui.widget.ElasticDragDismissFrameLayout>

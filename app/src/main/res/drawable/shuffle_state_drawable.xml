@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:constantSize="true">
+
+    <item app:state_shuffle_off="true">
+        <bitmap android:src="@drawable/ic_shuffle_blue_grey_800_24dp"
+                android:tint="@color/colorPrimaryLight"/>
+    </item>
+
+    <item app:state_shuffle_on="true">
+        <bitmap android:src="@drawable/ic_shuffle_blue_grey_800_24dp"
+                android:tint="@color/colorAccent"/>
+    </item>
+
+</selector>

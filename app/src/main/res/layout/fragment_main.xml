@@ -1,0 +1,23 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <com.exceptionaldevs.muzyka.ui.widget.recyclerview2.SDMRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+
+    <com.exceptionaldevs.muzyka.ui.widget.SplashLayout
+            android:id="@+id/splash_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:splash_background="@drawable/sonne"
+            app:splash_icon="@null"
+            app:splash_caption="@string/library_empty_hint"
+            android:layout_height="match_parent"/>
+
+</FrameLayout>
+

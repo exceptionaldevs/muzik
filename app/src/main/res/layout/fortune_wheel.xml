@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <com.exceptionaldevs.muzyka.ui.widget.fortunewheel.PieView
+            android:id="@+id/pieView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+    <com.exceptionaldevs.muzyka.ui.widget.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="@dimen/z_fab_over_touchable_app_bar"
+            android:alpha="0"
+            app:border_width="1dp"
+            app:border_color="#FFFFFF"
+            android:transitionName="@string/transition_fortunewheel_wheel"/>
+
+    <com.exceptionaldevs.muzyka.ui.widget.fortunewheel.DotsView
+            android:id="@+id/vDotsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+    <com.exceptionaldevs.muzyka.ui.widget.fortunewheel.CircleView
+            android:id="@+id/vCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+    <com.exceptionaldevs.muzyka.ui.widget.FABToggle
+            android:id="@+id/fab"
+            android:transitionName="@string/transition_fortunewheel_fab"
+            android:layout_width="@dimen/fabSize56dp"
+            android:layout_height="@dimen/fabSize56dp"
+            android:elevation="@dimen/z_fab_over_touchable_app_bar"
+            android:background="@drawable/fab_dribbble_fav"
+            android:layout_gravity="center"
+            android:stateListAnimator="@animator/raise"
+            android:src="@drawable/fortunewheel"
+            android:tint="@color/fab_heart_full"
+            android:scaleType="center"/>
+
+</merge>

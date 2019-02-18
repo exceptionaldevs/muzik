@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StylePackResource">
+        <attr name="stylePackLabel" format="reference"/>
+        <attr name="stylePackIconMain" format="reference"/>
+        <attr name="stylePackColorPrimary" format="reference"/>
+        <attr name="stylePackColorPrimaryDark" format="reference"/>
+        <attr name="stylePackTextColorPrimary" format="reference"/>
+        <attr name="stylePackTextColorSecondary" format="reference"/>
+        <attr name="stylePackTintColor" format="reference"/>
+        <attr name="stylePackAccentColor" format="reference"/>
+    </declare-styleable>
+</resources>

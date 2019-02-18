@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?attr/selectableItemBackgroundBorderless"
+             xmlns:tool="http://schemas.android.com/tools">
+
+    <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <ImageView
+                android:id="@+id/item_image"
+                android:layout_height="64dp"
+                android:layout_width="64dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"/>
+
+        <TextView
+                android:id="@+id/item_primary_text"
+                android:maxWidth="128dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_image"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                tool:text="Imagine Dragons"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/secondaryText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/primaryText"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Night Visions"/>-->
+    </RelativeLayout>
+
+
+</FrameLayout>

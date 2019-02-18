@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Muzik</string>
+    <string name="action_settings">Settings</string>
+
+     <string name="path_next">
+                        M 5,18.06 L 19,18.06 L 19,18.05 L 5,18.05 L 5,18.06 z
+						M 5,18.06 L 19,18.06 L 12,5.94 L 12,5.94 L 5,18.06 z
+						M 5,5.94 L 19,5.94 L 19,3.5 L 5,3.5 L 5,5.94 z
+    </string>
+    <string name="path_next_next">
+						M 5,18.06 L 19,18.06 L 12,5.94 L 12,5.94 L 5,18.06 z
+						M 5,5.94 L 19,5.94 L 19,3.5 L 5,3.5 L 5,5.94 z
+						M 5,3.6 L 19,3.6 L 19,3.5 L 5,3.5 L 5,3.6 z
+    </string>
+
+    <string name="path_drawer">M 3,6 L 3,8 L 21,8 L 21,6 L 3,6 z M 3,11 L 3,13 L 21,13 L 21, 12 L 21,11 L 3,11 z M 3,18 L 3,16 L 21,16 L 21,18 L 3,18 z</string>
+    <string name="path_arrow">M 12, 4 L 10.59,5.41 L 16.17,11 L 18.99,11 L 12,4 z M 4, 11 L 4, 13 L 18.99, 13 L 20, 12 L 18.99, 11 L 4, 11 z M 12,20 L 10.59, 18.59 L 16.17, 13 L 18.99, 13 L 12, 20z</string>
+    <string name="path_pause">M 6,19 L 10,19 L 10,5 L 6,5 L 6,19 z M 14,19 L 18,19 L 18,5 L 14,5 L 14,19 z</string>
+    <!--<string name="path_play">M 5, 18.06 L 12,18.06 L 12,5.94 L 12,5.94 L 5,18.06 z M 12,18.06 L 19,18.06 L 12,5.94 L 12,5.94 L 12,18.06 z</string>--> <!-- noob style, play button seems not aligned in center -->
+    <string name="path_play">M 5, 16.73 L 12,16.73 L 12,4.61 L 12,4.61 L 5,16.73 z M 12,16.73 L 19,16.73 L 12,4.61 L 12,4.61 L 12,16.73 z</string>  <!-- exceptional style, play button seems aligned in center -->
+
+    <string name="path_stop">M 6,18 L 12,18 L 12,6 L 6,6 L 6,18 z M 12,18 L 18,18 L 18,6 L 12,6 L 12,18z</string>
+
+    <string name="transition_player" translatable="false">transitionPlayerContainer</string>
+    <string name="transition_fortunewheel_wheel" translatable="false">transition_fortunewheel_wheel</string>
+    <string name="transition_fortunewheel_fab" translatable="false">transition_fortunewheel_fab</string>
+    <string name="transition_libitem">transitionPlayerToLibItem</string>
+    <string name="transition_minplayer_fab">transition_miniplayer_fab</string>
+
+
+    <string name="playerplaylist_empty_hint">Your Queue is empty, swipe some tracks into it!</string>
+    <string name="library_empty_hint">Seems as if there is nothing to show here.</string>
+    <string name="active">Active</string>
+    <string name="available">Available</string>
+    <string name="tab_settings_title">Tab order</string>
+    <string name="tab_settings_summary">Tap to toggle, drag to move.</string>
+    <string name="hidden">Hidden</string>
+    <string name="fortunewheel_again_btn">Again</string>
+    <string name="button_add">Add</string>
+    <string name="button_new">New</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="tabs">Tabs</string>
+    <string name="queue">Queue</string>
+    <string name="other">Other</string>
+    <string name="licenses">Licenses</string>
+    <string name="reordering_title">Reordering</string>
+    <string name="reordering_summary">If each queue item should be draggable.</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="tracks">Tracks</string>
+    <string name="playlists">Playlists</string>
+    <string name="artists_caption">All your artists.</string>
+    <string name="albums_caption">Any album you have.</string>
+    <string name="tracks_caption">An unfiltered list of all tracks.</string>
+    <string name="playlists_caption">Playlists we found on your device.</string>
+</resources>

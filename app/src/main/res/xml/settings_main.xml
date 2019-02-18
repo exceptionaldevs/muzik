@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Queue">
+        <CheckBoxPreference
+            android:key="main.player.queue.draggable"
+            android:summary="@string/reordering_summary"
+            android:defaultValue="true"
+            android:title="@string/reordering_title"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Tabs">
+        <PreferenceScreen
+            android:fragment="com.exceptionaldevs.muzyka.settings.tabs.TabOrderFragment"
+            android:key="main.tabs.order"
+            android:summary="@string/tab_settings_summary"
+            android:title="@string/tab_settings_title"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/other">
+        <PreferenceScreen
+            android:fragment="com.exceptionaldevs.muzyka.settings.LicensesFragment"
+            android:key="main.licenses"
+            android:title="@string/licenses"/>
+    </PreferenceCategory>
+</PreferenceScreen>

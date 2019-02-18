@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="24dp"
+              android:paddingRight="24dp"
+              android:paddingTop="24dp">
+
+
+    <com.exceptionaldevs.muzyka.ui.widget.FloatLabelLayout
+        android:id="@+id/fll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:floatLabelPaddingLeft="4dp"
+        app:floatLabelTextAppearance="@style/FloatLabelDefaultStyle">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textNoSuggestions"
+            android:layout_marginTop="0dp"
+            android:hint="@string/new_playlist"
+            android:singleLine="true"/>
+    </com.exceptionaldevs.muzyka.ui.widget.FloatLabelLayout>
+
+    <ListView
+        android:id="@+id/playlists_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:constantSize="true">
+
+    <item
+            android:id="@+id/repeat_none"
+            android:state_pressed="false"
+            android:drawable="@drawable/ic_repeat_blue_grey_800_24dp"/>
+
+    <item
+            android:id="@+id/repeat_one"
+            android:state_pressed="true"
+            android:drawable="@drawable/ic_repeat_one_blue_grey_800_24dp">
+        <color android:color="@color/colorAccent"/>
+    </item>
+
+    <!--<item-->
+            <!--android:id="@+id/repeat_none"-->
+            <!--app:state_repeat_none="true"-->
+            <!--app:state_repeat_one="false"-->
+            <!--app:state_repeat_all="false"-->
+            <!--android:drawable="@drawable/ic_repeat_blue_grey_800_24dp"/>-->
+
+    <!--<item-->
+            <!--android:id="@+id/repeat_one"-->
+            <!--app:state_repeat_none="false"-->
+            <!--app:state_repeat_one="true"-->
+            <!--app:state_repeat_all="false"-->
+            <!--android:drawable="@drawable/ic_repeat_one_blue_grey_800_24dp">-->
+        <!--<color android:color="@color/colorAccent"/>-->
+    <!--</item>-->
+
+    <!--<item-->
+            <!--android:id="@+id/repeat_all"-->
+            <!--app:state_repeat_none="false"-->
+            <!--app:state_repeat_one="false"-->
+            <!--app:state_repeat_all="true"-->
+            <!--android:drawable="@drawable/ic_repeat_blue_grey_800_24dp">-->
+        <!--<color android:color="@color/colorAccent"/>-->
+    <!--</item>-->
+
+
+    <transition
+            android:fromId="@id/repeat_none"
+            android:toId="@id/repeat_one"
+            android:reversible="false">
+
+        <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:oneshot="true">
+
+            <item
+                    android:drawable="@drawable/ic_repeat_blue_grey_800_24dp"
+                    android:duration="200">
+                <set>
+                    <objectAnimator
+                            android:propertyName="rotationX"
+                            android:duration="200"
+                            android:valueTo="180"
+                            android:valueType="floatType"/>
+                </set>
+            </item>
+            <item
+                    android:drawable="@drawable/ic_repeat_one_blue_grey_800_24dp"
+                    android:duration="200">
+                <color android:color="@color/colorAccent"/>
+                <set>
+                    <objectAnimator
+                            android:propertyName="rotationX"
+                            android:duration="200"
+                            android:valueTo="360"
+                            android:valueType="floatType"/>
+                </set>
+            </item>
+
+        </animation-list>
+    </transition>
+
+
+</animated-selector>

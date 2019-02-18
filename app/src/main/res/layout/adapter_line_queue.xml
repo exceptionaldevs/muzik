@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyline_1"
+                android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/item_primary_text"
+        style="@style/Widget.AppTheme.ListItemPrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginStart="72dp"
+        android:layout_toStartOf="@+id/drag_anchor"
+        android:gravity="bottom"
+        android:paddingBottom="22dp"
+        tool:text="Whish you were here"/>
+
+    <TextView
+        android:id="@+id/item_secondary_text"
+        style="@style/Widget.AppTheme.ListItemSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/item_primary_text"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/item_time_text"
+        android:paddingTop="26dp"
+        tool:text="Pink Floyd"/>
+
+    <TextView
+        android:id="@+id/item_time_text"
+        style="@style/Widget.AppTheme.ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignBaseline="@+id/item_secondary_text"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@id/drag_anchor"
+        android:gravity="end"
+        android:singleLine="true"
+        android:visibility="visible"
+        tool:text="3:21/3:28"/>
+
+    <ImageView
+        android:id="@+id/drag_anchor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_reorder"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="72dp"
+        android:background="#E6E6E6"/>
+
+</RelativeLayout>

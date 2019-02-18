@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShuffleButton">
+        <attr name="state_shuffle_on" format="boolean"/>
+        <attr name="state_shuffle_off" format="boolean"/>
+    </declare-styleable>
+</resources>

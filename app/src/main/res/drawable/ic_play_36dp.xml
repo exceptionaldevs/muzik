@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animated-selector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:constantSize="true">
+
+    <item
+            android:id="@+id/pause"
+            android:state_checked="true"
+            android:drawable="@drawable/ic_pause_vector_36dp" />
+
+    <item
+            android:id="@+id/play"
+            android:drawable="@drawable/ic_play_vector_36dp" />
+
+    <transition
+            android:fromId="@id/play"
+            android:toId="@id/pause"
+            android:drawable="@drawable/ic_play_to_pause_36dp" />
+
+    <transition
+            android:fromId="@id/pause"
+            android:toId="@id/play"
+            android:drawable="@drawable/ic_pause_to_play_36dp" />
+
+</animated-selector>

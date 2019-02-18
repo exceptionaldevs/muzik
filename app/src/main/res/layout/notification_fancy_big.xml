@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+
+    <ImageView
+        android:id="@id/notification_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/ll_metadata_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="32dp"
+            android:background="#aa000000"
+            android:paddingBottom="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:text="Guten Tach Herr ChefGuten Tach Herr ChefGuten Tach Herr ChefGuten Tach Herr Chef"/>
+
+        <TextView
+            android:id="@+id/notification_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/notification_title"
+            android:layout_below="@id/notification_title"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/notification_stop"
+            android:background="#aa000000"
+            android:paddingBottom="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:textColor="#aaffffff"
+            android:textSize="13sp"
+            tools:text="Best of 2000 Album Best of 2000 AlbumBest of 2000 AlbumBest of 2000 Album"/>
+
+        <TextView
+            android:id="@id/notification_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/notification_album"
+            android:layout_alignRight="@id/notification_album"
+            android:layout_below="@id/notification_album"
+            android:background="#aa000000"
+            android:paddingBottom="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:textColor="#aaffffff"
+            android:textSize="13sp"
+            tools:text="Götz Widmann"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_metadata_container"
+        android:layout_gravity="bottom"
+        android:src="@drawable/notifcation_divider_line"/>
+
+
+    <ImageView
+        android:id="@id/notification_stop"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_close_blue_grey_800_24dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/notification_cover"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_metadata_container"
+        android:background="@drawable/gradient"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@id/notification_heart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/notification_button_selector"
+            android:scaleType="center"
+            android:src="@drawable/ic_favorite_border_red_500_24dp"/>
+
+        <ImageView
+            android:id="@id/notification_previous"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/notification_button_selector"
+            android:scaleType="center"
+            android:src="@drawable/ic_skip_previous_white_36dp"/>
+
+        <ImageView
+            android:id="@id/notification_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/notification_button_selector"
+            android:scaleType="center"
+            android:src="@drawable/ic_play_arrow_white_36dp"/>
+
+        <ImageView
+            android:id="@id/notification_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/notification_button_selector"
+            android:scaleType="center"
+            android:src="@drawable/ic_skip_next_white_36dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

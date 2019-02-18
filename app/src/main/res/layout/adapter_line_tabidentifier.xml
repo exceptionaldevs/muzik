@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/TwoLineListItemContainer"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/drag_anchor"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Some tab"/>
+
+        <TextView
+            android:id="@+id/summary"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/text_secondary_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            tools:text="This is a summary for this tab."/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/drag_anchor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_reorder"/>
+</RelativeLayout>

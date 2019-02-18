@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tool="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_gravity="top"
+                    android:scaleType="centerCrop"/>
+
+            <!-- will be used to show circluar instead of rectangular image when transitioning to new activity -->
+            <com.exceptionaldevs.muzyka.ui.widget.CircleImageView
+                    android:id="@+id/item_transition_civ"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_gravity="top"
+                    android:visibility="invisible"
+                    android:scaleType="centerCrop"/>
+        </FrameLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_micro"
+                android:paddingBottom="@dimen/spacing_micro">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/item_add_track">
+
+                <TextView
+                        android:id="@+id/item_primary_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_micro"
+                        tool:text="Wish you were here"/>
+
+                <TextView
+                        android:id="@+id/item_secondary_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tool:text="Pink Floyd"/>
+            </LinearLayout>
+
+            <ImageButton
+                    android:id="@+id/item_add_track"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_add_circle_blue_grey_400_36dp"/>
+        </RelativeLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_motheritem_tertiary_item"-->
+        <!--style="@style/ListItemSecondaryText"-->
+        <!--android:layout_width="56dp"-->
+        <!--android:layout_height="16dp"-->
+        <!--android:layout_alignBaseline="@+id/tv_motheritem_secondary_item"-->
+        <!--android:layout_alignRight="@+id/tv_motheritem_primary_item"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:gravity="right"-->
+        <!--android:visibility="visible"-->
+        <!--tool:text="3:21/3:28"/>-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

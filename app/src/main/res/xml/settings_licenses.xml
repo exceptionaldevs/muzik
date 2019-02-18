@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:summary="Design news and inspiration. (APACHE 2.0)"
+        android:title="Plaid">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/nickbutcher/plaid"/>
+    </Preference>
+    <Preference
+        android:summary="View injection library for Android. (APACHE 2.0)"
+        android:title="Butter Knife">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/JakeWharton/butterknife"/>
+    </Preference>
+    <Preference
+        android:summary="An HTTP+HTTP/2 client for Android and Java applications. (APACHE 2.0)"
+        android:title="OkHttp">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/square/okhttp"/>
+    </Preference>
+    <Preference
+        android:summary="Type-safe HTTP client for Android and Java by Square, Inc. (APACHE 2.0)"
+        android:title="Retrofit">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/square/retrofit"/>
+    </Preference>
+    <Preference
+        android:summary="A Java serialization library that can convert Java Objects into JSON and back. (APACHE 2.0)"
+        android:title="Gson ">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/google/gson"/>
+    </Preference>
+    <Preference
+        android:summary="SquiDB is a SQLite database layer for Android. (APACHE 2.0)"
+        android:title="SquiDB">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/yahoo/squidb"/>
+    </Preference>
+    <Preference
+        android:summary="An extensible media player for Android. (APACHE 2.0)"
+        android:title="ExoPlayer">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/google/ExoPlayer"/>
+    </Preference>
+    <Preference
+        android:summary="By Henning Dodenhof under. (APACHE 2.0)"
+        android:title="CircleImageView">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/hdodenhof/CircleImageView"/>
+    </Preference>
+    <Preference
+        android:summary="An image loading and caching library for Android focused on smooth scrolling. (Multiple licenses)"
+        android:title="Glide">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/bumptech/glide"/>
+    </Preference>
+    <Preference
+        android:summary="materialdesignicons.com (SIL Open Font License 1.1 / Attribution 4.0 International)"
+        android:title="Material Design Icons">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Templarian/MaterialDesign"/>
+    </Preference>
+    <Preference
+        android:summary="Android Open Source Project (APACHE 2.0)"
+        android:title="Android">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://source.android.com/source/licenses.html"/>
+    </Preference>
+    <Preference
+        android:summary="A support library for VectorDrawable and AnimatedVectorDrawable classes introduced in Lollipop. (APACHE 2.0)"
+        android:title="vector-compat">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/wnafee/vector-compat"/>
+    </Preference>
+    <Preference
+        android:key="license.rxandroid"
+        android:summary="RxJava / RxAndroid (APACHE 2.0)"
+        android:title="RxAndroid">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ReactiveX/RxAndroid"/>
+    </Preference>
+    <Preference
+        android:key="license.rxlifecycle"
+        android:summary="Lifecycle handling APIs for Android apps using RxJava (APACHE 2.0)"
+        android:title="RxLifecycle">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/trello/RxLifecycle"/>
+    </Preference>
+</PreferenceScreen>
