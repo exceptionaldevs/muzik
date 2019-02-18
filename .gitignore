@@ -1,0 +1,8 @@
+.gradle
+.idea
+.DS_Store
+*.iml
+/local.properties
+/gradle.properties
+/build
+external/music-core

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="notification_play"/>
+    <item type="id" name="notification_pause"/>
+    <item type="id" name="notification_stop"/>
+    <item type="id" name="notification_next"/>
+    <item type="id" name="notification_previous"/>
+    <item type="id" name="notification_cover"/>
+    <item type="id" name="notification_artist"/>
+    <item type="id" name="notification_album"/>
+    <item type="id" name="notification_title"/>
+    <item type="id" name="notification_heart"/>
+</resources>
