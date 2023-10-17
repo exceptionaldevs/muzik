@@ -8,3 +8,8 @@ Despite initial success and positive feedback from beta testers, we performed to
 
 ### Preview
 <img src="https://user-images.githubusercontent.com/1439229/56851956-2e170100-6915-11e9-97bc-a73632ca4683.gif" width="250"><img src="https://user-images.githubusercontent.com/1439229/56851748-045cda80-6913-11e9-86ee-302b30d71389.png" width="250"><img src="https://user-images.githubusercontent.com/1439229/56851755-1179c980-6913-11e9-9078-8861aed1d06e.png" width="250">
+
+
+
+https://github.com/exceptionaldevs/muzik/assets/539707/a3dc33c9-5dc1-4d36-b6a1-f04bfc019b16
+
